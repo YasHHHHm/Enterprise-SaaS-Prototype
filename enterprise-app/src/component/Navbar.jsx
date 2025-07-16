@@ -1,13 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { initFlowbite } from 'flowbite';
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     initFlowbite();
   }, []);
-  
+
   return (
-    <nav className="bg-white border-gray-200">
+    <nav className="bg-white border-gray-200  sticky top-0 z-50 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -44,11 +46,11 @@ export default function Navbar() {
             />
           </div>
           <button 
-            data-collapse-toggle="navbar-search" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             type="button" 
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" 
             aria-controls="navbar-search" 
-            aria-expanded="false"
+            aria-expanded={isMobileMenuOpen}
           >
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -56,7 +58,10 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div 
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-300 ease-in-out overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:max-h-screen md:opacity-100'}`}
+          id="navbar-search"
+        >
           <div className="relative mt-3 md:hidden">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
