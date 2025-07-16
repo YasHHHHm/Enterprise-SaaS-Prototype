@@ -5,6 +5,7 @@ export default function Navbar() {
   useEffect(() => {
     initFlowbite();
   }, []);
+  
   return (
     <nav className="bg-white border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -74,12 +75,37 @@ export default function Navbar() {
               <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Home</a>
             </li>
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Business</a>
             </li>
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Knowledge</a>
+            </li>
+            <li>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Startups</a>
+            </li>
+            <li className="flex gap-2 mt-2 md:hidden">
+              <a href="/launch" className="px-4 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full text-center">
+                Launch
+              </a>
+              <a href="/login" className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full text-center">
+                Login
+              </a>
             </li>
           </ul>
+          <div className="hidden md:flex md:space-x-4 md:ml-6">
+            <a 
+              href="/launch" 
+              className="px-4 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            >
+              Launch Your Project
+            </a>
+            <a 
+              href="/login" 
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            >
+              Login/Signup
+            </a>
+          </div>
         </div>
       </div>
     </nav>
