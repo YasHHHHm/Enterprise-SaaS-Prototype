@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-gray-300 w-full mt-auto">
+        <footer className="bg-black text-gray-300 w-full mt-auto">
             <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row gap-8 mb-8 md:mb-12">

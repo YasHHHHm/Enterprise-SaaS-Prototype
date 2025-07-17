@@ -20,11 +20,12 @@ export default function Navbar() {
           <span className="self-center text-2xl font-bold whitespace-nowrap text-blue-950">AI Brain.co</span>
         </a>
         <div className="flex md:order-2">
-          <button 
-            type="button" 
-            data-collapse-toggle="navbar-search" 
-            aria-controls="navbar-search" 
-            aria-expanded="false" 
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} // Add this
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded={isMobileMenuOpen} // Sync with state
             className="md:hidden text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1"
           >
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -38,18 +39,18 @@ export default function Navbar() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
             </div>
-            <input 
-              type="text" 
-              id="search-navbar" 
-              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" 
-              placeholder="Search..." 
+            <input
+              type="text"
+              id="search-navbar"
+              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search..."
             />
           </div>
-          <button 
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            type="button" 
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" 
-            aria-controls="navbar-search" 
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-search"
             aria-expanded={isMobileMenuOpen}
           >
             <span className="sr-only">Open main menu</span>
@@ -58,7 +59,7 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div 
+        <div
           className={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-300 ease-in-out overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:max-h-screen md:opacity-100'}`}
           id="navbar-search"
         >
@@ -68,11 +69,11 @@ export default function Navbar() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
             </div>
-            <input 
-              type="text" 
-              id="search-navbar-mobile" 
-              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" 
-              placeholder="Search..." 
+            <input
+              type="text"
+              id="search-navbar-mobile"
+              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search..."
             />
           </div>
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
@@ -98,14 +99,14 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="hidden md:flex md:space-x-4 md:ml-6">
-            <a 
-              href="/launch" 
+            <a
+              href="/launch"
               className="px-4 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300"
             >
               Launch Your Project
             </a>
-            <a 
-              href="/login" 
+            <a
+              href="/login"
               className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
             >
               Login/Signup
