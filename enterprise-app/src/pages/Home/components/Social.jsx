@@ -75,6 +75,22 @@ const cards = [
       "Images/Ellipse 4.png",
       "Images/Ellipse 8.png"
     ]
+  },
+  {
+    id: 4,
+    img: "./Images/cardimg4.jpg",
+    title: "The Silent Disruptor: How FemTech Startups Are Changing Healthcare",
+    text: "While mainstream media focuses on flashy tech unicorns, FemTech startups are quietly revolutionizing healthcare. We analyze the market forces, demographic shifts, and product innovations driving this $50B sector and highlight the key players to watch.",
+    views: 845,
+    comments: 73,
+    shares: 164,
+    likes: 387,
+    vectorIcon: "Images/fa-solid_praying-hands.png",
+    profileImages: [
+      "Images/Ellipse 10.png",
+      "Images/Ellipse 4.png",
+      "Images/Ellipse 8.png"
+    ]
   }
 ];
 

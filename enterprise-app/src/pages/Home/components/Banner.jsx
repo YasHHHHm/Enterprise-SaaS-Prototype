@@ -22,18 +22,14 @@ const cardInfo = [
 export default function Banner() {
   return (
     <section className="py-8 my-8 relative">
-      {/* Subtle gray background with geometric pattern */}
-      <div className="absolute inset-0 bg-gray-50 opacity-95 z-0">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-start">
           {/* Text section on the left */}
           <div className="w-full lg:w-1/4 px-4 mb-6 lg:mb-0">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Featured Insights</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Wisdom From Visionaries</h2>
             <p className="text-gray-600">
-              Discover our curated collection of trending articles and popular reads.
+              Timeless insights from the world's most innovative entrepreneurs and business leaders.
             </p>
           </div>
           
