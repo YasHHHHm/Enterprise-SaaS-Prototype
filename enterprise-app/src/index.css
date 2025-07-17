@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-1rem); /* move from top */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* natural position */
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+}
+
+*{
+  --secondary: #6425FE;
+}
+
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1E88E5;
+  border-radius: 10px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1E88E5 transparent;
+}
+
+body {
+  background-color: rgb(249, 246, 243); /* Light gray - change to your preferred color */
+  min-height: 100vh; /* Ensures it covers full viewport height */
+  margin: 0; /* Remove default margin */
+}
