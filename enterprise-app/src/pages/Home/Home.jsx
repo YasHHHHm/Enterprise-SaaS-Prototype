@@ -1,3 +1,4 @@
+import Banner from "./components/Banner";
 import Cards from "./components/Cards";
 import Carousel from "./components/Carousel";
 import Social from "./components/Social";
@@ -10,6 +11,8 @@ export default function Home() {
       <Cards />
 
       <Social />
+
+      <Banner />
     </div>
   );
 }
