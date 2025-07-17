@@ -58,7 +58,7 @@ export default function Cards() {
       {/* Heading Section */}
       <div className="mb-12 text-left">
         <div className="inline-block relative">
-          <h2 className="text-4xl md:text-5xl font-bold italic text-[#002748] relative z-10">
+          <h2 className="text-4xl md:text-5xl font-semibold italic text-[#002748] relative z-10">
             Find Your Niche:
           </h2>
           <div className="absolute -bottom-2 left-0 w-3/4 h-2 bg-yellow-950 z-0"></div>
