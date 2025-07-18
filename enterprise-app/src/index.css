@@ -3,9 +3,21 @@
 @tailwind utilities;
 
 
+@layer utilities {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-1rem); /* move from top */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* natural position */
+    }
+  }
 
-*{
-  --secondary: #6425FE;
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
 }
 
 body {

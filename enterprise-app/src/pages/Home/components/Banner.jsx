@@ -21,7 +21,7 @@ const cardInfo = [
 
 export default function Banner() {
   return (
-    <section className="py-8 my-8 relative">
+    <section className="py-8 animate-fade-in my-8 relative">
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-start">

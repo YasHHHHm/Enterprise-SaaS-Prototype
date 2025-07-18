@@ -126,7 +126,7 @@ export default function BusinessBreakthroughsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-indigo-600 py-20 px-4">
+    <section ref={sectionRef} className="animate-fade-in bg-indigo-600 py-20 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Enhanced Text Section */}
         <div className="text-white lg:sticky lg:top-20 space-y-8">

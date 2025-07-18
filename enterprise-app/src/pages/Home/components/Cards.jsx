@@ -54,7 +54,7 @@ export default function Cards() {
   const visibleCategories = showAllCategories ? categories : categories.slice(0, 6);
 
   return (
-    <section className="min-h-screen mt-10 max-w-7xl mx-auto px-4 py-12">
+    <section className="min-h animate-fade-in-screen mt-10 max-w-7xl mx-auto px-4 py-12">
       {/* Heading Section */}
       <div className="mb-12 text-left">
         <div className="inline-block relative">

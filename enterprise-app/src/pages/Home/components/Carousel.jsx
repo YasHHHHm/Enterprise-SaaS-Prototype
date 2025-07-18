@@ -51,7 +51,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden shadow-lg">
+    <div className="relative animate-fade-in w-full overflow-hidden shadow-lg">
       {/* Slides */}
       <div className="relative h-96 md:h-[500px] w-full bg-black">
         {carouselItems.map((item, index) => (
