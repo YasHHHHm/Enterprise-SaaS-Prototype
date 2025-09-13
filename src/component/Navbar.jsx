@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { initFlowbite } from 'flowbite';
+import icons from '../assets/icons/icons';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,11 +14,11 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="/Images/TI Final Logo pdf version-01 1.png"
+            src={icons.Logo}
             className="h-12"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-bold whitespace-nowrap text-blue-950">AI Brain.co</span>
+          <span className="self-center text-2xl font-bold whitespace-nowrap text-blue-950">KickstartHQ</span>
         </a>
         <div className="flex md:order-2">
           <button

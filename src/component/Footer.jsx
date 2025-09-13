@@ -1,4 +1,4 @@
-
+import icons from "../assets/icons/icons";
 
 export default function Footer() {
     return (
@@ -10,11 +10,11 @@ export default function Footer() {
                     <div className="md:w-1/4">
                         <div className="flex items-center mb-4 md:mb-6">
                             <img
-                                src="/Images/TI Final Logo pdf version-01 1.png"
+                                src = {icons.Logo}
                                 alt="Company Logo"
                                 className="h-8 md:h-10 mr-3"
                             />
-                            <span className="text-xl md:text-2xl font-bold text-white">AI Brain.co</span>
+                            <span className="text-xl md:text-2xl font-bold text-white">KickstartHQ</span>
                         </div>
                         <p className="text-gray-400 text-sm md:text-base mb-4">
                             We provide innovative solutions to help your business grow in the digital era.

@@ -20,6 +20,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "build:carousel": "node tools/build-carousel-avif.js",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

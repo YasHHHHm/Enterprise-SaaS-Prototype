@@ -30,7 +30,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -47,4 +47,5 @@ body {
   background-color: rgb(249, 246, 243); /* Light gray - change to your preferred color */
   min-height: 100vh; /* Ensures it covers full viewport height */
   margin: 0; /* Remove default margin */
+  
 }

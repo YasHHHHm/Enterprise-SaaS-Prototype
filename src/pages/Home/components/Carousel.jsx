@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import images from '../../../assets/images/images';
 
 const carouselItems = [
   {
     id: 1,
-    image: "/Images/carousel1.jpg",
+    image: images.carousel1,
     alt: "Slide 1",
     caption: `"Launchpad For Products Services That Have Something Unique and New"`
   },
   {
     id: 2,
-    image: "/Images/carousel2.webp",
+    image: images.carousel2,
     alt: "Slide 2",
     caption: `"Data-Driven Business Insights for the Modern Entrepreneur"`
   },
   {
     id: 3,
-    image: "/Images/carousel3.jpg",
+    image: images.carousel3,
     alt: "Slide 3",
     caption: `"Validating Faster, Failing Smarter - The Modern Startup Way"`
   },
   {
     id: 4,
-    image: "/Images/carousel4.webp",
+    image: images.carousel4,
     alt: "Slide 4",
     caption: `"Got a Vision? We've Got the Launch Strategy"`
   }

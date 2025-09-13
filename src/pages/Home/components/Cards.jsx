@@ -1,57 +1,58 @@
 import { useState } from "react";
+import images from "../../../assets/images/images";
 
 const categories = [
   {
     id: 1,
-    image: "./Images/automobile.jpg",
+    image: images.automobile,
     title: "Automobile",
     subtext: "Driving Innovation Forward - The Future of Mobility!",
   },
   {
     id: 2,
-    image: "./Images/entertainment.jpg",
+    image: images.entertainment,
     title: "Arts & Entertainment",
     subtext: "Where Creativity Meets Technology - The Future of Entertainment!",
   },
   {
     id: 3,
-    image: "./Images/appliances.jpg",
+    image: images.appliances,
     title: "Home Appliances",
     subtext: "Smarter Homes, Simpler Lives - Next-Gen Appliances!",
   },
   {
     id: 4,
-    image: "./Images/electronics.jpg",
+    image: images.electronics,
     title: "Electronics",
     subtext: "Smaller, Faster, Smarter - The Evolution of Electronics!",
   },
   {
     id: 5,
-    image: "./Images/education.jpg",
+    image: images.education,
     title: "Education",
     subtext: "Smart Learning, Brighter Futures - EdTech Revolution!",
   },
   {
     id: 6,
-    image: "./Images/selfcare.jpg",
+    image: images.personalcare,
     title: "Personal Care",
     subtext: "Wellness Reinvented - Self-Care for the Modern World!",
   },
   {
     id: 7,
-    image: "./Images/medical.jpg",
+    image: images.medical,
     title: "Medical",
     subtext: "Innovate to Save Lives - Next-Gen Medical Solutions!",
   },
   {
     id: 8,
-    image: "Images/food.jpg",
+    image: images.food,
     title: "Food & Beverages",
     subtext: "From Farm to Future - Disrupting the Food Industry!",
   },
   {
     id: 9,
-    image: "./Images/sports.jpg",
+    image: images.sports,
     title: "Sports",
     subtext: "Game-Changing Innovations - Elevate Performance!",
   },
@@ -86,10 +87,12 @@ export default function Cards() {
 >
   {/* Image */}
   <img
-    src={category.image}
-    alt={category.title}
-    className="w-full h-full object-cover opacity-90 group-hover:opacity-50 transition-opacity duration-300"
-  />
+  src={category.image}
+  alt={category.title}
+  loading="lazy"          // ✅ native lazy loading
+  decoding="async"        // ✅ decode off main thread when possible
+  className="w-full h-full object-cover opacity-90 group-hover:opacity-50 transition-opacity duration-300"
+/>
 
   {/* --- CORNER: triangle + arrow + Discover --- */}
   {/* Triangle (top-right). White -> indigo-600 on hover */}
