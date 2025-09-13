@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="./Images/TI Final Logo pdf version-01 1.png"
+            src="/Images/TI Final Logo pdf version-01 1.png"
             className="h-12"
             alt="Flowbite Logo"
           />
@@ -78,16 +78,16 @@ export default function Navbar() {
           </div>
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Home</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 transition-colors duration-200 md:p-0">Home</a>
             </li>
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Business</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition-colors duration-200">Business</a>
             </li>
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Knowledge</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition-colors duration-200">Knowledge</a>
             </li>
             <li>
-              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Startups</a>
+              <a href="/" className="block py-2 px-3 text-[#3C4852] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 transition-colors duration-200">Startups</a>
             </li>
             <li className="flex gap-2 mt-2 md:hidden">
               <a href="/launch" className="px-4 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full text-center">

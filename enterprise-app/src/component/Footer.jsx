@@ -1,3 +1,5 @@
+
+
 export default function Footer() {
     return (
         <footer className="bg-black text-gray-300 w-full mt-auto">
@@ -8,7 +10,7 @@ export default function Footer() {
                     <div className="md:w-1/4">
                         <div className="flex items-center mb-4 md:mb-6">
                             <img
-                                src="Images/TI Final Logo pdf version-01 1.png"
+                                src="/Images/TI Final Logo pdf version-01 1.png"
                                 alt="Company Logo"
                                 className="h-8 md:h-10 mr-3"
                             />

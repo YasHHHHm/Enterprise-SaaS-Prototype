@@ -3,25 +3,25 @@ import React, { useState, useEffect } from 'react';
 const carouselItems = [
   {
     id: 1,
-    image: "Images/ethan-hoover-zyU2gQ9mWLM-unsplash.jpg",
+    image: "/Images/carousel1.jpg",
     alt: "Slide 1",
     caption: `"Launchpad For Products Services That Have Something Unique and New"`
   },
   {
     id: 2,
-    image: "Images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg",
+    image: "/Images/carousel2.webp",
     alt: "Slide 2",
     caption: `"Data-Driven Business Insights for the Modern Entrepreneur"`
   },
   {
     id: 3,
-    image: "Images/matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg",
+    image: "/Images/carousel3.jpg",
     alt: "Slide 3",
     caption: `"Validating Faster, Failing Smarter - The Modern Startup Way"`
   },
   {
     id: 4,
-    image: "Images/carousel-1.jpeg",
+    image: "/Images/carousel4.webp",
     alt: "Slide 4",
     caption: `"Got a Vision? We've Got the Launch Strategy"`
   }
