@@ -4,19 +4,19 @@ import images from '../../../assets/images/images';
 const carouselItems = [
   {
     id: 1,
-    image: images.carousel1,
+    image: images.carousel2,
     alt: "Slide 1",
     caption: `"Launchpad For Products Services That Have Something Unique and New"`
   },
   {
     id: 2,
-    image: images.carousel2,
+    image: images.carousel3,
     alt: "Slide 2",
     caption: `"Data-Driven Business Insights for the Modern Entrepreneur"`
   },
   {
     id: 3,
-    image: images.carousel3,
+    image: images.carousel1,
     alt: "Slide 3",
     caption: `"Validating Faster, Failing Smarter - The Modern Startup Way"`
   },
